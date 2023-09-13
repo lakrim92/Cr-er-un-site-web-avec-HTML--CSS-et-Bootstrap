@@ -1,0 +1,956 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;}
+
+header {
+  background-color: #333;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  /*.navbar {
+    background-color: #333;
+  }*/
+
+  .card-about {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  /*.navbar {
+    background-color: #555;
+  }*/
+
+  .card-about {
+    padding: 20px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la section hero */
+.hero-image {
+  position: relative;
+  background-image: url('images/hero-image.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.hero-text {
+  padding: 20px;
+  color: #fff;
+  animation-duration: 1s;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: fadeIn 1s ease;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease 0.2s;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-hover:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;
+}
+
+.social-icons-bottom-right .nav-link:hover {
+  color: #555;
+}
+
+.first-btn .btn:hover {
+  background-color: #ffcc00;
+  color: #333;
+  border: 1px solid #ffcc00;
+}
+
+.nav-link.login-link {
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-link.login-link:hover {
+  color: #ffcc00;
+}
+
+.navbar-nav .nav-link .fas,
+.navbar-nav .nav-link .fab {
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link .fas:hover,
+.navbar-nav .nav-link .fab:hover {
+  color: #ffcc00;
+}
+
+.navbar-nav .social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.navbar-nav .social-icons .nav-item {
+  margin-left: 15px;
+}
+
+.social-icons-bottom-right .nav-link {
+  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icons-bottom-right {
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.navbar {
+  background-color: #333;
+  font-size: 1em;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  color: #fff;
+}
+
+
+
+
+
+.btn {
+  background-color: #4CAF50;
+  /* Couleur de fond du bouton */
+  color: #fff;
+  /* Couleur du texte du bouton */
+  padding: 10px 20px;
+  /* Espacement à l'intérieur du bouton */
+  font-size: 18px;
+  text-transform: uppercase;
+  /* Texte en majuscules */
+  border: none;
+  /* Supprimer la bordure du bouton */
+  border-radius: 25px;
+  /* Coins arrondis du bouton */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn-hover:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Styles pour la section about */
+.about {
+  background-image: url('images/planet-7014517.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
+  padding: 50px 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card-about {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.card-about {
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border: 2px solid #222;
+  border-radius: 20px;
+  margin: 10px;
+  flex: 0 0 calc(50% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 350px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+
+.card-about:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-body {
+  background-color: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body:hover {
+  background-color: white;
+}
+
+.card-obj:hover {
+  transform: scale(1.02);
+}
+
+#hidden-paragraph.collapsed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#toggle-button {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer img {
+  max-width: 100%;
+}
+
+.footer-btn {
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+/* Styles pour le bouton "En savoir plus" */
+.objectifs {
+  background-color: #333;
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+
+a.btn {
+  color: #fff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px
+}
+
+.card-body:hover {
+  background-color: white;
+}
+
+/* Styles pour les icônes de réseaux sociaux */
+.nav-link i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.card:hover .card-body {
+  background-color: #fff;
+  /* Couleur de fond gris clair */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.first-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.card-text {
+  font-size: 18px;
+  overflow: hidden;
+  /* Masquer le texte qui dépasse la hauteur du contenu */
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  /* Ajouter des points de suspension pour le texte qui dépasse */
+  //max-height: 4 * 1.5em; /* Limite de hauteur initiale (4 lignes à 1.5em par ligne) */
+  //display: -webkit-box;
+  //-webkit-line-clamp: 4; /* Limiter le texte à 4 lignes */
+  //-webkit-box-orient: vertical;
+}
+
+.card-expand-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-expand-button button {
+  color: #555;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.card-expand-button button.btn {
+  background-color: transparent;
+  /* Couleur de fond du bouton */
+  color: #555;
+  /* Couleur du texte du bouton */
+  border: 2px solid #555;
+  /* Supprime la bordure du bouton */
+  border-radius: 5px;
+  /* Ajoute un peu de courbure aux coins du bouton */
+  padding: 10px 20px;
+  /* Ajoute de l'espace à l'intérieur du bouton */
+  font-size: 16px;
+  /* Taille de police du bouton */
+  font-weight: bold;
+  /* Texte en gras */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Animation de transition */
+  text-decoration: none;
+}
+
+.card-expand-button button.btn:hover {
+  background-color: #555;
+  /* Couleur de fond du bouton au survol */
+  color: #fff;
+  /* Couleur du texte du bouton au survol */
+  text-decoration: none;
+  /* Supprime la soulignement au survol */
+}
+
+.card-expand-button button:hover {
+  background-color: #333;
+  text-decoration: underline;
+}
+
+.title-first {
+  font-size: 28px;
+  /* Augmentez la taille de la police */
+  color: #333;
+  /* Choisissez une couleur de texte adaptée à votre design */
+  font-weight: bold;
+  /* Mettez en gras pour attirer l'attention */
+  text-transform: uppercase;
+  /* Convertit le texte en majuscules */
+  text-align: center;
+  /* Centre le texte horizontalement */
+  /*margin-top: 20px;  Ajoute de l'espace au-dessus du titre */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  /* Ajoute une ombre au texte */
+  letter-spacing: 2px;
+  /* Ajoute une ombre au texte */
+  letter-spacing: 4px;
+  transform: translateZ(5px);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.title-obj {
+  font-size: 28px;
+  /* Augmentez la taille de la police */
+  color: #fff;
+  /* Choisissez une couleur de texte adaptée à votre design */
+  font-weight: bold;
+  /* Mettez en gras pour attirer l'attention */
+  text-transform: uppercase;
+  /* Convertit le texte en majuscules */
+  text-align: center;
+  /* Centre le texte horizontalement */
+  /*margin-bottom: 20px;  Ajoute de l'espace au-dessus du titre */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  /* Ajoute une ombre au texte */
+  letter-spacing: 4px;
+  transform: translateZ(5px);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card-obj {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-obj:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.btn-transparent:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour les éléments cachés */
+.collapse:not(.show) {
+  display: none;
+}
+
+.row {
+  margin-bottom: 20px;
+  /* Vous pouvez ajuster la valeur selon l'espace souhaité */
+}
+
+.cadre-backg {
+  background-color: #333;
+  border: 5px solid #000;
+  /* Épaisseur des bordures */
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  /* Espace intérieur du cadre */
+}
+
+.cadre-backg {
+  background-color: #333;
+  border: 10px solid #222;
+  /* Épaisseur des bordures */
+  border-radius: 20px;
+  /* Coins arrondis */
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  /* Ombre extérieure */
+  position: relative;
+}
+
+/* Reflet en haut */
+.cadre-backg::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  height: 10px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+  border-radius: 20px 20px 0 0;
+}
+
+/* Reflet en bas */
+.cadre-backg::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  height: 10px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent);
+  border-radius: 0 0 20px 20px;
+}
+
+/* Ajoutez une classe personnalisée pour le style du texte */
+.hidden-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Limite le texte à 3 lignes */
+  -webkit-box-orient: vertical;
+}
+
+.hidden-text.expanded {
+  overflow: visible;
+  white-space: normal;
+  -webkit-line-clamp: unset;
+  /* Supprime la limitation de lignes */
+}
+
+/* Ajoutez des styles personnalisés pour les cartes */
+.custom-card {
+  border: 2px solid #222;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  /* Agrandit la carte au survol */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Style pour la section Objectifs */
+#objectifs {
+  background-color: #f5f5f5;
+  /* Couleur de fond similaire à celle de la section À propos */
+  padding: 50px;
+  /* Ajoutez de l'espace autour du contenu */
+  text-align: center;
+  /* Centrez le texte */
+}
+
+#objectifs h3 {
+  color: #333;
+  /* Couleur du texte */
+  font-size: 36px;
+  /* Taille de la police */
+  font-weight: bold;
+  /* Texte en gras */
+  margin-bottom: 20px;
+  /* Espacement en bas */
+}
+
+#objectifs h2 {
+  color: #333;
+  /* Couleur du texte */
+  font-size: 24px;
+  /* Taille de la police */
+}
+
+#objectifs p {
+  color: #666;
+  /* Couleur du texte */
+  font-size: 16px;
+  /* Taille de la police */
+  line-height: 1.5;
+  /* Espacement entre les lignes */
+}
+
+#objectifs a {
+  color: #007bff;
+  /* Couleur du lien */
+  text-decoration: none;
+  /* Supprime la soulignement du lien */
+  font-weight: bold;
+  /* Rend le texte du lien en gras */
+}
+
+#objectifs .card {
+  background-color: #fff;
+  /* Couleur de fond des cartes */
+  border: 2px solid #222;
+  /* Bordure des cartes */
+  border-radius: 15px;
+  /* Coins arrondis des cartes */
+  //padding: 20px; /* Espacement intérieur des cartes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Ombre des cartes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation des cartes */
+}
+
+#objectifs .card:hover {
+  transform: scale(1.05);
+  /* Agrandit la carte au survol */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s, box-shadow 0.5s;
+  /* Animation fluide */
+  /* Ombre légèrement plus prononcée au survol */
+}
+
+#objectifs a:hover {
+  text-decoration: underline;
+  /* Ajoute une soulignement au survol du lien */
+}
+
+.card {
+  position: relative;
+  perspective: 2000px;
+  /* Définit la perspective pour l'effet 3D */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Agrandit la carte au survol */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  /* Ombre légèrement plus prononcée */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation fluide */
+}
+
+#objectifs .btn {
+  background-color: transparent;
+  /* Couleur de fond du bouton */
+  color: #555;
+  /* Couleur du texte du bouton */
+  padding: 10px 20px;
+  /* Espacement à l'intérieur du bouton */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Texte en majuscules */
+  border-radius: 25px;
+  /* Coins arrondis du bouton */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid #555;
+  text-decoration: none;
+}
+
+#objectifs .btn:hover {
+  background-color: #555;
+  /* Couleur de fond du bouton au survol */
+  color: #fff;
+  /* Couleur du texte du bouton au survol */
+  text-decoration: none;
+  /* Supprime la soulignement au survol */
+}
+
+#objectifs .title-obj {
+  color: #fff;
+  /* Couleur du texte en blanc pour un bon contraste */
+  background-color: #333;
+  /* Couleur de fond inchangée */
+  padding: 10px 20px;
+  /* Espacement autour du texte */
+  border-radius: 10px;
+  /* Coins arrondis pour le titre */
+  font-size: 2;
+  /* Taille de police */
+  font-weight: bold;
+  /* Texte en gras */
+}
+
+
+.collapse.show {
+  display: block;
+  /* Afficher le texte lorsque la classe "show" est ajoutée */
+}
+
+/* Style personnalisé pour la section "Nous rejoindre" */
+.nous-rejoindre {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.nous-rejoindre h3 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+.nous-rejoindre p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.nous-rejoindre img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Ajoute des coins arrondis à l'image */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /* Ajoute une ombre douce à l'image */
+}
+
+.nous-rejoindre .btn-transparent,
+.nous-rejoindre .btn-transparent {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  /* Ajoute des coins arrondis aux boutons */
+  margin-top: 20px;
+}
+
+.nous-rejoindre .btn-transparent {
+  color: #555;
+  font-size: 20px;
+  /* Augmente la taille de la police du bouton */
+  padding: 15px 30px;
+  /* Ajoute de l'espace à l'intérieur du bouton */
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #222;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nous-rejoindre .nous-rejoindre {
+  background-color: transparent;
+  border-color: #555;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.nous-rejoindre .btn-transparent:hover,
+.nous-rejoindre .nous-rejoindre:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Style personnalisé pour la classe bottom-button */
+.bottom-button {
+  margin-bottom: 30px;
+  /* Ajustez la marge inférieure selon vos préférences */
+}
+
+/* Style pour le bouton "Faire un don" */
+.nous-rejoindre .nous-rejoindre {
+  background-color: #333;
+  /* Couleur de fond du bouton */
+  color: #fff;
+  /* Couleur du texte du bouton */
+  font-size: 20px;
+  /* Augmente la taille de la police du bouton */
+  padding: 15px 30px;
+  /* Ajoute de l'espace à l'intérieur du bouton */
+  border: 2px solid #555;
+  border-radius: 50px;
+  /* Arrondit les coins du bouton */
+  margin-top: 20px;
+  /* Ajoute de l'espace en haut du bouton */
+  display: block;
+  /* Change le bouton en élément de bloc pour le centrer */
+  margin-left: auto;
+  /* Centre horizontalement le bouton */
+  margin-right: auto;
+  /* Centre horizontalement le bouton */
+  transition: background-color 0.3s;
+  /* Ajoute une transition de couleur en survol */
+}
+
+/* Style pour l'image */
+.nous-rejoindre img {
+  max-width: 100%;
+  /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+  height: auto;
+  /* Empêche l'image de se déformer */
+  margin: 30px 0;
+  /* Ajoute de la marge en haut et en bas de l'image */
+  display: block;
+  /* Centre l'image horizontalement */
+  margin-left: auto;
+  /* Centre l'image horizontalement */
+  margin-right: auto;
+  /* Centre l'image horizontalement */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Ajoute une ombre à l'image pour donner du volume */
+}
+
+#cadre-rejoindre {
+  padding-top: 40px;
+}
+
+.btn-primary {
+  background-color: #fff; /* Fond blanc */
+  border: 2px solid #ccc; /* Bordure grise de 2px */
+  color: #000; /* Texte noir */
+  transition: background-color 0.3s, color 0.3s; /* Transition de couleur au survol */
+}
+
+.btn-primary:hover {
+  background-color: #ccc; /* Fond gris au survol */
+  color: #fff; /* Texte blanc au survol */
+  border: 2px solid #ccc; /* Bordure grise de 2px au survol */
+}
+
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.hover-link::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  //background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+.hover-link:hover::after {
+  opacity: 1;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Description de votre site web">
+	<meta name="keywords" content="mots-clés, pour, votre, site">
+	<title>Association pour l'Environnement Vert</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">AEV</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="evenements.html">Événements</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">À propos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="social-icons-bottom-right">
+				<!-- Logo de connexion -->
+				<a class="nav-link login-link" href="contact.html"><i class="fas fa-user"></i></a>
+				<a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+				<a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+				<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+		</nav>
+
+		<div class="hero-image">
+			<div class="hero-text text-center">
+				<h1 class="animated fadeInDown display-4">Bienvenue à l'Association pour l'Environnement Vert</h1>
+				<p class="animated fadeInUp lead">Nous sommes dévoués à la préservation de l'environnement et à la
+					sensibilisation à l'écologie.</p>
+				<div class="first-btn">
+					<a href="about.html" class="btn btn-transparent btn-lg btn-hover animated fadeIn">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+	</header>
+    <section id="inscription-evenement">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="title-first">Inscription à l'événement</h2>
+                    <form action="traitement_formulaire.php" method="POST">
+                        <!-- Champ pour le nom de l'événement -->
+                        <div class="form-group">
+                            <label for="evenement">Nom de l'événement :</label>
+                            <input type="text" class="form-control" id="evenement" name="evenement" required>
+                        </div>
+
+                        <!-- Champ pour la date de l'événement -->
+                        <div class="form-group">
+                            <label for="date">Date de l'événement :</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+
+                        <!-- Champ pour le nom -->
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
+                        </div>
+
+                        <!-- Champ pour l'e-mail -->
+                        <div class="form-group">
+                            <label for="email">E-mail :</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <!-- Champ pour le numéro de téléphone -->
+                        <div class="form-group">
+                            <label for="telephone">Téléphone :</label>
+                            <input type="tel" class="form-control" id="telephone" name="telephone">
+                        </div>
+
+                        <!-- Bouton de soumission du formulaire -->
+                        <button type="submit" class="btn btn-primary">Validez</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: #333; color: #fff; padding: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Logo de l'association -->
+					<img src="chemin/vers/logo-association.png" alt="Logo de l'Association pour l'Environnement Vert">
+					<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">À propos
+						de nous</h4>
+					<p style="font-size: 14px;">L'Association pour l'Environnement Vert s'engage à la préservation de
+						l'environnement et à la sensibilisation à l'écologie. Notre mission est de protéger notre
+						planète pour les générations futures.</p>
+				</div>
+				<div class="col-md-4">
+					<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+						Contactez-nous</h4>
+					<p style="font-size: 14px;">Adresse : 123 Rue de l'Environnement, Ville, Pays</p>
+					<p style="font-size: 14px;">Email : contact@environnementvert.org<a
+							href="mailto:information@fne.asso.fr" style="color: #fff;"></a></p>
+					<p style="font-size: 14px;">Téléphone : +1 234 567 890<a href="tel:0988195580"
+							style="color: #fff;"></a></p>
+				</div>
+				<div class="col-md-4">
+					<h5<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+						Suivez-nous</h5>
+						<div class="social-links">
+							<a class="social-link" href="https://www.linkedin.com/company/france-nature-environnement"
+								target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							<a class="social-link" href="https://www.facebook.com/FranceNatureEnvironnement"
+								target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a class="social-link" href="https://twitter.com/FNEasso" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a class="social-link" href="https://www.youtube.com/channel/UCazMD7FP_6jVaN1S-GLiqqg"
+								target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+							<a class="social-link" href="https://www.instagram.com/fne.asso/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-12 text-center">
+				<a href="contact.html" class="btn btn-transparent btn-lg">Faire un don</a>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-12 text-center">
+					<p style="font-size: 12px;">&copy; 2022 Association pour l'Environnement Vert. Tous droits réservés.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

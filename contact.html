@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Événements à venir et passés de l'Association pour l'Environnement Vert">
+    <meta name="keywords" content="événements, environnement, écologie">
+    <title>Événements | Association pour l'Environnement Vert</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles communs pour tous les écrans */
+        body {
+            background-color: #f8f9fa;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Styles pour les écrans mobiles */
+        @media (max-width: 767px) {
+            .hero-image {
+                height: 200px;
+            }
+
+            .hero-text {
+                padding: 20px;
+            }
+
+            .contact {
+                padding: 20px;
+            }
+
+            .form-container {
+                margin-bottom: 10px;
+            }
+
+            .contact-info {
+                padding: 20px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+        }
+
+        /* Styles pour les écrans plus larges (tablettes et au-delà) */
+        @media (min-width: 768px) {
+            /*.hero-image {
+                height: 400px;
+            }*/
+
+            /*.hero-text {
+                padding: 50px;
+            }*/
+
+            /*.contact {
+                padding: 50px;
+            }*/
+
+            .form-container {
+                margin-bottom: 20px;
+            }
+
+            .contact-info {
+                padding: 50px;
+            }
+
+            footer {
+                padding: 20px;
+            }
+        }
+
+        /* Autres styles spécifiques aux écrans larges ici */
+    </style>
+</head>
+
+<body>
+    <header style="background-color: #333; color: #fff;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="min-height: 40px;">
+            <a class="navbar-brand" href="index.html" style="font-size: 24px; font-weight: bold; letter-spacing: 2px; color: #fff;">AEV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="height: 0px;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-size: 18px; color: #fff;">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html" style="font-size: 18px; color: #fff;">Événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="font-size: 18px; color: #fff;">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="font-size: 18px; color: #fff;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-link">
+                <a class="nav-link login-link" href="contact.html" style="font-size: 18px; color: #fff;"><i class="fas fa-user"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f" style="font-size: 18px; color: #fff;"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-twitter" style="font-size: 18px; color: #fff;"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-instagram" style="font-size: 18px; color: #fff;"></i></a>
+            </div>
+        </nav>
+        <div class="hero-image">
+            <div class="hero-text text-center">
+                <h1 class="animated fadeInDown display-4" style="font-size: 36px; font-weight: bold;">Contactez-nous</h1>
+                <p class="animated fadeInUp lead" style="font-size: 18px;">Vous êtes les bienvenus pour nous contacter à tout moment. Que ce
+                    soit pour vous inscrire en tant que membre, vous connecter à votre compte, faire un don ou poser
+                    des questions, nous sommes là pour vous aider.</p>
+            </div>
+        </div>
+    </header>
+    
+    <section class="contact">
+        <div class="container">
+    
+            <!-- Formulaire d'inscription -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-container">
+                        <h2 class="title-first">Inscription</h2>
+                        <form action="inscription.php" method="post">
+                            <div class="form-group">
+                                <label for="nomInscription">Nom</label>
+                                <input type="text" class="form-control" id="nomInscription" name="nomInscription"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInscription">Adresse Email</label>
+                                <input type="email" class="form-control" id="emailInscription" name="emailInscription"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephoneInscription">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephoneInscription"
+                                    name="telephoneInscription" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motDePasseInscription">Mot de passe</label>
+                                <input type="password" class="form-control" id="motDePasseInscription"
+                                    name="motDePasseInscription" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Formulaire de connexion -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-container">
+                        <h2 class="title-first">Connexion</h2>
+                        <form action="connexion.php" method="post">
+                            <div class="form-group">
+                                <label for="emailConnexion">Adresse Email</label>
+                                <input type="email" class="form-control" id="emailConnexion" name="emailConnexion"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motDePasseConnexion">Mot de passe</label>
+                                <input type="password" class="form-control" id="motDePasseConnexion"
+                                    name="motDePasseConnexion" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Se connecter</button>
+                            <div class="form-group">
+                                <a href="mot-de-passe-oublie.php">Mot de passe oublié ?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Formulaire de don -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-container">
+                        <h2 class="title-first">Faire un don</h2>
+                        <form action="don.php" method="post">
+                            <div class="form-group">
+                                <label for="montantDon">Montant du don</label>
+                                <input type="text" class="form-control" id="montantDon" name="montantDon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomDonateur">Nom du donateur</label>
+                                <input type="text" class="form-control" id="nomDonateur" name="nomDonateur" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailDonateur">Adresse Email</label>
+                                <input type="email" class="form-control" id="emailDonateur" name="emailDonateur" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Faire un don</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Informations de contact -->
+    <section class="contact-info bg-light py-3 py-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="title-first">Nos coordonnées</h2>
+                    <address>
+                        <strong>Association pour l'Environnement Vert</strong><br>
+                        123 Rue de l'Environnement<br>
+                        Ville, Pays<br>
+                        <abbr title="Téléphone">Tél :</abbr> +1 234 567 890<br>
+                        <abbr title="Email">Email :</abbr> contact@environnementvert.org
+                    </address>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="title-first">Heures d'ouverture</h2>
+                    <p class="contact-p" style="color: #333;">Nous sommes ouverts du lundi au vendredi de 9h00 à 17h00.
+                        N'hésitez pas à nous rendre visite ou à
+                        nous contacter pendant nos heures d'ouverture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="background-color: #333; color: #fff; padding: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <!-- Logo de l'association -->
+                    <img src="chemin/vers/logo-association.png" alt="Logo de l'Association pour l'Environnement Vert">
+                    <h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">À propos
+                        de nous</h4>
+                    <p style="font-size: 14px;">L'Association pour l'Environnement Vert s'engage à la préservation de
+                        l'environnement et à la sensibilisation à l'écologie. Notre mission est de protéger notre
+                        planète pour les générations futures.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+                        Contactez-nous</h4>
+                    <p style="font-size: 14px;">Adresse : 123 Rue de l'Environnement, Ville, Pays</p>
+                    <p style="font-size: 14px;">Email : contact@environnementvert.org<a
+                            href="mailto:information@fne.asso.fr" style="color: #fff;"></a></p>
+                    <p style="font-size: 14px;">Téléphone : +1 234 567 890<a href="tel:0988195580"
+                            style="color: #fff;"></a></p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+                        Suivez-nous</h5>
+                    <div class="social-links">
+                        <a class="social-link" href="https://www.linkedin.com/company/france-nature-environnement"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="social-link" href="https://www.facebook.com/FranceNatureEnvironnement"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social-link" href="https://twitter.com/FNEasso" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social-link" href="https://www.youtube.com/channel/UCazMD7FP_6jVaN1S-GLiqqg"
+                            target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="social-link" href="https://www.instagram.com/fne.asso/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center footer-btn">
+                    <a href="#" class="btn btn-transparent btn-lg">Faire un don</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p style="font-size: 12px;">&copy; 2022 Association pour l'Environnement Vert. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleText(cardNumber) {
+            // Utilisation de l'identifiant unique pour cibler l'élément spécifique
+            const cardText = document.getElementById(`card-text-${cardNumber}`);
+            cardText.classList.toggle('expanded');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
