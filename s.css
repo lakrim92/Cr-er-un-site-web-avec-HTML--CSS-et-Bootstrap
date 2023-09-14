@@ -1,76 +1,4 @@
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #333;
-  margin: 0;
-  padding: 0;}
 
-header {
-  background-color: #333;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  /*.navbar {
-    background-color: #333;
-  }*/
-
-  .card-about {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  body {
-    font-size: 14px;
-  }
-
-  /*.navbar {
-    background-color: #555;
-  }*/
-
-  .card-about {
-    padding: 20px;
-  }
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-.hero-text {
-  padding: 20px;
-  color: #fff;
-  animation-duration: 1s;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  animation: fadeIn 1s ease;
-}
 
 p {
   font-size: 18px;
@@ -82,12 +10,27 @@ p {
   background-color: #4CAF50;
   color: #fff;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s color 0.3s, border-color 0.3s;
+}
+
+/* Style pour les boutons primaires (par exemple, bouton S'inscrire) */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* Style pour les boutons de formulaire par défaut (par exemple, bouton Mot de passe oublié) */
+.btn-default {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
 }
 
 .btn:hover {
@@ -107,15 +50,7 @@ p {
   border-radius: 10px;
 }
 
-.navbar-nav .nav-link {
-  color: #fff;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
 
-.navbar-nav .nav-link:hover {
-  color: #ffcc00;
-}
 
 .social-icons-bottom-right .nav-link:hover {
   color: #555;
@@ -125,36 +60,6 @@ p {
   background-color: #ffcc00;
   color: #333;
   border: 1px solid #ffcc00;
-}
-
-.nav-link.login-link {
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.nav-link.login-link:hover {
-  color: #ffcc00;
-}
-
-.navbar-nav .nav-link .fas,
-.navbar-nav .nav-link .fab {
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-.navbar-nav .nav-link .fas:hover,
-.navbar-nav .nav-link .fab:hover {
-  color: #ffcc00;
-}
-
-.navbar-nav .social-icons {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.navbar-nav .social-icons .nav-item {
-  margin-left: 15px;
 }
 
 .social-icons-bottom-right .nav-link {
@@ -172,35 +77,11 @@ p {
   padding-right: 15px;
 }
 
-.navbar {
-  background-color: #333;
-  min-height: auto;
-}
+
 
 .navbar-toggler {
   border-color: #fff;
 }
-
-.navbar-nav {
-  margin: 0 auto;
-  flex-grow: 1;
-  align-items: flex-end;
-}
-
-.navbar-nav .nav-item {
-  margin-left: 15px;
-  text-align: center;
-  flex-grow: 1;
-}
-
-.navbar-brand {
-  font-size: 2em;
-  color: #fff;
-}
-
-
-
-
 
 .btn {
   background-color: #4CAF50;
@@ -465,28 +346,6 @@ h2 {
   text-decoration: underline;
 }
 
-.title-first {
-  font-size: 28px;
-  /* Augmentez la taille de la police */
-  color: #333;
-  /* Choisissez une couleur de texte adaptée à votre design */
-  font-weight: bold;
-  /* Mettez en gras pour attirer l'attention */
-  text-transform: uppercase;
-  /* Convertit le texte en majuscules */
-  text-align: center;
-  /* Centre le texte horizontalement */
-  /*margin-top: 20px;  Ajoute de l'espace au-dessus du titre */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-  /* Ajoute une ombre au texte */
-  letter-spacing: 2px;
-  /* Ajoute une ombre au texte */
-  letter-spacing: 4px;
-  transform: translateZ(5px);
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
 .title-obj {
   font-size: 28px;
   /* Augmentez la taille de la police */
@@ -563,10 +422,7 @@ h2 {
   display: none;
 }
 
-.row {
-  margin-bottom: 20px;
-  /* Vous pouvez ajuster la valeur selon l'espace souhaité */
-}
+
 
 .cadre-backg {
   background-color: #333;
@@ -905,18 +761,9 @@ h2 {
   padding-top: 40px;
 }
 
-.btn-primary {
-  background-color: #fff; /* Fond blanc */
-  border: 2px solid #ccc; /* Bordure grise de 2px */
-  color: #000; /* Texte noir */
-  transition: background-color 0.3s, color 0.3s; /* Transition de couleur au survol */
-}
 
-.btn-primary:hover {
-  background-color: #ccc; /* Fond gris au survol */
-  color: #fff; /* Texte blanc au survol */
-  border: 2px solid #ccc; /* Bordure grise de 2px au survol */
-}
+
+
 
 .hover-link {
   position: relative;

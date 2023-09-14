@@ -34,3 +34,10 @@ const objectifsData = [
   
   generateObjectifsCards(objectifsData);
   
+  $(document).ready(function () {
+    // Fermer le menu lorsqu'un lien du menu est cliqué
+    $('.navbar-nav>li>a').on('click', function () {
+        console.log('Clic détecté.'); // Ajoutez une alerte de débogage
+        $('.navbar-collapse').collapse('hide');
+    });
+});

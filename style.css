@@ -1,0 +1,397 @@
+ /* Styles communs pour tous les écrans */
+ body {
+    background-color: #f8f9fa;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 767px) {
+    .navbar-brand {
+        text-align: center;
+    }
+
+    .hero-image {
+        height: 00px;
+    }
+
+    .hero-text {
+        padding: 20px;
+    }
+
+    .btn {
+        bottom: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .form-container {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Styles pour les écrans plus larges (tablettes et au-delà) */
+@media (min-width: 768px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-text {
+        padding: 50px;
+    }
+
+    .btn {
+        bottom: 20px;
+        /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les tablettes */
+    }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .form-container {
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        padding: 50px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Media Query pour les écrans de taille supérieure (par exemple, ordinateurs de bureau) */
+@media (min-width: 1200px) {
+    .btn {
+        bottom: 30px;
+        /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les ordinateurs de bureau */
+    }
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #333;
+    min-height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    /* Pour aligner verticalement les liens et les icônes */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+}
+
+.nav-link.login-link {
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link.login-link:hover {
+    color: #ffcc00;
+}
+
+.navbar-nav .nav-link .fas,
+.navbar-nav .nav-link .fab {
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link .fas:hover,
+.navbar-nav .nav-link .fab:hover {
+    color: #ffcc00;
+}
+
+.navbar-nav .social-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.navbar-nav .social-icons .nav-item {
+    margin-left: 15px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.social-icons .social-icon {
+    margin-right: 20px; /* Ajoute 20 pixels d'espace à droite de chaque icône */
+}
+
+
+/* Styles pour le hamburger à gauche sur les petits écrans (mobiles) */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        order: -1;
+        /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
+    }
+
+    .navbar-collapse {
+        order: 0;
+        /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
+    }
+}
+
+/* Styles pour le hamburger à gauche sur les petits écrans (mode paysage) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-toggler {
+        order: -1;
+        /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
+    }
+
+    .navbar-collapse {
+        order: 0;
+        /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
+    }
+}
+
+.custom-pl-3 {
+    padding-left: 1rem;
+    /* Ajustez la valeur selon vos préférences pour l'espacement à gauche */
+    padding-right: 1rem;
+    /* Ajustez la valeur selon vos préférences pour l'espacement à droite */
+}
+
+/* Hero section styles */
+.hero {
+    background-size: cover;
+    position: relative;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Styles pour la section hero */
+.hero-image {
+    position: relative;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-text {
+    padding: 20px;
+    color: #fff;
+    animation-duration: 1s;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    bottom: 10px;
+    left: 50%;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    /* Fond blanc au survol */
+    color: #555;
+    /* Texte blanc au survol */
+    border: 1px solid #fff;
+    /* Bordure grise de 2px au survol */
+}
+
+/* Styles pour les titres h1 et p avec des animations */
+.header h1,
+.header p {
+    opacity: 0;
+    /* Le texte est initialement invisible */
+    transform: translateY(-20px);
+    /* Le texte est déplacé vers le haut de 20px */
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        /* Le texte devient visible */
+        transform: translateY(0);
+        /* Le texte revient à sa position initiale */
+    }
+}
+
+/* Styles pour positionner le bouton en bas de l'image */
+.hero {
+    position: relative;
+    /* Pour que l'image serve de référence de position */
+}
+
+/* Styles pour le texte "À propos de nous" */
+.about-us-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+.footer-btn {
+    margin-top: 30px;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-transparent:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styles pour les droits d'auteur */
+.copyright {
+    font-size: 12px;
+    margin-top: 30px;
+}
