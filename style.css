@@ -263,7 +263,7 @@ header {
     color: #fff;
 }
 
-.btn {
+/*.btn {
     display: inline-block;
     bottom: 10px;
     left: 50%;
@@ -276,7 +276,7 @@ header {
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 
-}
+}*/
 
 .btn-primary:hover {
     background-color: #fff;
@@ -375,7 +375,7 @@ footer {
     margin-top: 30px;
 }
 
-.btn-transparent {
+/*.btn-transparent {
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
@@ -388,7 +388,7 @@ footer {
 .btn-transparent:hover {
     background-color: #fff;
     color: #333;
-}
+}*/
 
 /* Styles pour les droits d'auteur */
 .copyright {
