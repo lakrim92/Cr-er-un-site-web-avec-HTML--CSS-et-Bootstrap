@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 		.title-obj {
-			font-size: 28px;
+			font-size: 35px;
 			/* Augmentez la taille de la police */
 			color: #fff;
 			/* Choisissez une couleur de texte adaptée à votre design */
@@ -260,43 +260,151 @@
 			cursor: pointer;
 			text-decoration: underline;
 		}
+
+		.card-mission {
+			background-color: #555
+		}
+
+		.fs-2 {
+    font-size: 2.5rem; /* Modifiez la taille de la police selon vos préférences */
+}
+/* Style personnalisé pour la section "Nous rejoindre" */
+.nous-rejoindre {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.nous-rejoindre p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.nous-rejoindre img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Ajoute des coins arrondis à l'image */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /* Ajoute une ombre douce à l'image */
+}
+
+.nous-rejoindre .btn-transparent,
+.nous-rejoindre .btn-transparent {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  /* Ajoute des coins arrondis aux boutons */
+  margin-top: 20px;
+}
+
+.nous-rejoindre .btn-transparent {
+  color: #555;
+  font-size: 20px;
+  /* Augmente la taille de la police du bouton */
+  padding: 15px 30px;
+  /* Ajoute de l'espace à l'intérieur du bouton */
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #222;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nous-rejoindre .nous-rejoindre {
+  background-color: transparent;
+  border-color: #555;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.nous-rejoindre .btn-transparent:hover,
+.nous-rejoindre .nous-rejoindre:hover {
+  background-color: #333;
+  color: white;
+}
 	</style>
 </head>
 
 <body>
 	<header class="header">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<div class="container text-center">
-				<a href="index.html" class="navbar-brand ml-auto">AEV</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav m-auto mt-auto">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link custom-pl-3">Accueil</a>
-						</li>
-						<li class="nav-item">
-							<a href="evenements.html" class="nav-link custom-pl-3">Événements</a>
-						</li>
-						<li class="nav-item">
-							<a href="about.html" class="nav-link custom-pl-3custom-pl-3">À propos</a>
-						</li>
-						<li class="nav-item">
-							<a href="contact.html" class="nav-link custom-pl-3">Contact</a>
-						</li>
-					</ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container text-center">
+                <a href="index.html" class="navbar-brand ml-auto">AEV</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto mt-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link custom-pl-3">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="evenements.html" class="nav-link custom-pl-3">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link custom-pl-3custom-pl-3">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link custom-pl-3">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="contact.html" class="social-icon"><i class="fas fa-user"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1 class="hero-title">Bienvenue à l'Association pour l'Environnement Vert</h1>
+                <p class="hero-description">Nous sommes dévoués à la préservation de l'environnement et à la
+                    sensibilisation à l'écologie.</p>
+                <a href="about.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+    </header>
+
+	<section class="quisommesnous" id="quisommesnous">
+		<div class="container py-5">
+			<div class="text-center">
+				<h3 class="title-first fs-2 mb-5 display-4 text-center">Qui sommes-nous</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="card custom-card">
+						<div class="card-body card-mission d-flex flex-column align-items-center">
+							<h4 class="title-first text-white mt-4 mb-3">Notre mission</h4>
+							<img src="images/hero-image.jpg" class="card-img-top w-100 mt-3 mb-3" alt="Image pour Notre mission" style="border-radius: 20px;">
+
+							<p class="text-center mt3">
+								Notre mission est de promouvoir la conservation de la biodiversité, de sensibiliser à la
+								réduction des déchets et de collaborer avec d'autres organisations environnementales
+								pour préserver notre planète.
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="social-icons">
-					<a href="contact.html" class="social-icon"><i class="fas fa-user"></i></a>
-					<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+				<div class="col-md-6 mb-4">
+					<div class="card custom-card">
+						<div class="card-body card-mission  d-flex flex-column align-items-center">
+							<h4 class="title-first text-white mt-4 mb-3">Notre équipe</h4>
+							<img src="images/hero-image.jpg" class="card-img-top w-100 mt-3 mb-3" alt="Image pour Notre mission" style="border-radius: 20px;">
+							<p class="text-center mt-3">
+								Notre équipe est composée d'experts passionnés par la protection de l'environnement.
+								Nous sommes déterminés à faire une différence positive dans le monde.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</div>
+	</section>
+
 
 	<section class="objectifs" id="objectifs" style="background-color: #333">
 		<div class="cadre-backg">
@@ -492,12 +600,13 @@
 
 	<section class="nous-rejoindre" style="background-color: #f8f9fa;">
 		<div class="container py-5">
-			<h3 class="display-4 mb-4"
-				style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-weight: 700; letter-spacing: 2px; transform: translateZ(20px);">
-				REJOIGNEZ-NOUS</h3>
+			<h3 class="display-4 mb-4 mt-0"
+    style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-weight: 700; letter-spacing: 2px; transform: translateZ(20px);">
+    REJOIGNEZ-NOUS</h3>
+
 			<div class="row text-center mt-4">
-				<div class="col-md-6 pb-3 mt-3 order-md-2 text-center my-5" id="cadre-rejoindre">
-					<p class="lead" style="font-size: 20px;">
+				<div class="col-md-6 pb-3 mt-4 order-md-2 text-center my-5" id="cadre-rejoindre">
+					<p class="lead mt-4" style="font-size: 20px;">
 						Rejoignez notre association pour contribuer à la préservation de l'environnement et à la lutte
 						contre le changement climatique. Ensemble, nous pouvons faire la différence.
 					</p>
@@ -523,7 +632,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="footer-section">
+					<div class="footer-section text-center">
 						<img src="images/aev.png" alt="Logo de l'Association pour l'Environnement Vert"
 							class="footer-logo">
 						<div class="footer-text">
@@ -547,7 +656,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="footer-section">
-						<div class="footer-text">
+						<div class="footer-text text-center">
 							<p class="footer-heading">Suivez-nous</p>
 							<div class="social-links">
 								<a class="social-link"
@@ -573,7 +682,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row mt-4">
+			<div class="row mt-5">
 				<div class="col-12 text-center">
 					<a href="#" class="btn btn-primary btn-lg">Faire un don</a>
 				</div>
@@ -596,7 +705,7 @@
 		function toggleText(cardId) {
 			const hiddenText = document.getElementById(`hidden-text-${cardId}`);
 			const button = document.getElementById(`toggle-button-${cardId}`);
-	
+
 			if (hiddenText) {
 				if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
 					hiddenText.style.display = 'block'; // Affichez le texte complet
@@ -607,19 +716,20 @@
 				}
 			}
 		}
-	
+
 		// Associez la fonction toggleText aux boutons "Lire la suite" en utilisant l'identifiant unique de la carte
 		const buttons = document.querySelectorAll('[id^="toggle-button-"]');
-	
+
 		buttons.forEach((button) => {
 			button.addEventListener('click', function () {
-				const cardId = this.id.replace('toggle-button-', ''); // Obtenez l'identifiant unique de la carte
+				const cardId = this.id.replace('toggle-button-',
+				''); // Obtenez l'identifiant unique de la carte
 				toggleText(cardId); // Appelez la fonction toggleText avec l'identifiant unique
 			});
 		});
 	</script>
-	
-	
+
+
 
 </body>
 

@@ -18,49 +18,47 @@
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="index.html">AEV</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse justify-content-center" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Accueil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="evenements.html">Événements</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">À propos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<div class="social-icons-bottom-right">
-				<!-- Logo de connexion -->
-				<a class="nav-link login-link" href="contact.html"><i class="fas fa-user"></i></a>
-				<a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-				<a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-				<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-			</div>
-		</nav>
-
-		<div class="hero-image">
-			<div class="hero-text text-center">
-				<h1 class="animated fadeInDown display-4">Bienvenue à l'Association pour l'Environnement Vert</h1>
-				<p class="animated fadeInUp lead">Nous sommes dévoués à la préservation de l'environnement et à la
-					sensibilisation à l'écologie.</p>
-				<div class="first-btn">
-					<a href="about.html" class="btn -transparent btn-lg btn-hover animated fadeIn">En savoir plus</a>
-				</div>
-			</div>
-		</div>
-	</header>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container text-center">
+                <a href="index.html" class="navbar-brand ml-auto">AEV</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto mt-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link custom-pl-3">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="evenements.html" class="nav-link custom-pl-3">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link custom-pl-3custom-pl-3">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link custom-pl-3">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="contact.html" class="social-icon"><i class="fas fa-user"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1 class="hero-title">Bienvenue à l'Association pour l'Environnement Vert</h1>
+                <p class="hero-description">Nous sommes dévoués à la préservation de l'environnement et à la
+                    sensibilisation à l'écologie.</p>
+                <a href="about.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+    </header>
     <section id="inscription-evenement">
         <div class="container">
             <div class="row">
@@ -104,59 +102,68 @@
             </div>
         </div>
     </section>
-    <footer style="background-color: #333; color: #fff; padding: 20px;">
+	<footer class="bg-dark text-light py-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<!-- Logo de l'association -->
-					<img src="chemin/vers/logo-association.png" alt="Logo de l'Association pour l'Environnement Vert">
-					<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">À propos
-						de nous</h4>
-					<p style="font-size: 14px;">L'Association pour l'Environnement Vert s'engage à la préservation de
-						l'environnement et à la sensibilisation à l'écologie. Notre mission est de protéger notre
-						planète pour les générations futures.</p>
-				</div>
-				<div class="col-md-4">
-					<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
-						Contactez-nous</h4>
-					<p style="font-size: 14px;">Adresse : 123 Rue de l'Environnement, Ville, Pays</p>
-					<p style="font-size: 14px;">Email : contact@environnementvert.org<a
-							href="mailto:information@fne.asso.fr" style="color: #fff;"></a></p>
-					<p style="font-size: 14px;">Téléphone : +1 234 567 890<a href="tel:0988195580"
-							style="color: #fff;"></a></p>
-				</div>
-				<div class="col-md-4">
-					<h5<h4 class="mt-3" style="font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
-						Suivez-nous</h5>
-						<div class="social-links">
-							<a class="social-link" href="https://www.linkedin.com/company/france-nature-environnement"
-								target="_blank">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-							<a class="social-link" href="https://www.facebook.com/FranceNatureEnvironnement"
-								target="_blank">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-							<a class="social-link" href="https://twitter.com/FNEasso" target="_blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a class="social-link" href="https://www.youtube.com/channel/UCazMD7FP_6jVaN1S-GLiqqg"
-								target="_blank">
-								<i class="fab fa-youtube"></i>
-							</a>
-							<a class="social-link" href="https://www.instagram.com/fne.asso/" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a>
+					<div class="footer-section text-center">
+						<img src="images/aev.png" alt="Logo de l'Association pour l'Environnement Vert"
+							class="footer-logo">
+						<div class="footer-text">
+							<p class="footer-heading">À propos de nous</p>
+							<p>L'Association pour l'Environnement Vert s'engage à la préservation de l'environnement et
+								à la
+								sensibilisation à l'écologie. Notre mission est de protéger notre planète pour les
+								générations futures.</p>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-section">
+						<div class="footer-text">
+							<p class="footer-heading">Contactez-nous</p>
+							<p>Adresse : 123 Rue de l'Environnement, Ville, Pays</p>
+							<p>Email : contact@environnementvert.org</p>
+							<p>Téléphone : +1 234 567 890</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-section">
+						<div class="footer-text text-center">
+							<p class="footer-heading">Suivez-nous</p>
+							<div class="social-links">
+								<a class="social-link"
+									href="https://www.linkedin.com/company/france-nature-environnement" target="_blank">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+								<a class="social-link" href="https://www.facebook.com/FranceNatureEnvironnement"
+									target="_blank">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a class="social-link" href="https://twitter.com/FNEasso" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a class="social-link" href="https://www.youtube.com/channel/UCazMD7FP_6jVaN1S-GLiqqg"
+									target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+								<a class="social-link" href="https://www.instagram.com/fne.asso/" target="_blank">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-12 text-center">
-				<a href="contact.html" class="btn btn-transparent btn-lg">Faire un don</a>
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<a href="#" class="btn btn-primary btn-lg">Faire un don</a>
+				</div>
 			</div>
-			<div class="row mt-3">
-				<div class="col-md-12 text-center">
-					<p style="font-size: 12px;">&copy; 2022 Association pour l'Environnement Vert. Tous droits réservés.
-					</p>
+			<div class="row mt-4">
+				<div class="col-12 text-center">
+					<p class="copyright">&copy; 2022 Association pour l'Environnement Vert. Tous droits réservés.</p>
 				</div>
 			</div>
 		</div>
