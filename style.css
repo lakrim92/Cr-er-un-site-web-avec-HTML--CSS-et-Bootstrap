@@ -263,21 +263,6 @@ header {
     color: #fff;
 }
 
-/*.btn {
-    display: inline-block;
-    bottom: 10px;
-    left: 50%;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 1px solid #333;
-    color: #555;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-
-}*/
-
 .btn-primary:hover {
     background-color: #fff;
     /* Fond blanc au survol */
@@ -374,21 +359,6 @@ footer {
 .footer-btn {
     margin-top: 30px;
 }
-
-/*.btn-transparent {
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-transparent:hover {
-    background-color: #fff;
-    color: #333;
-}*/
 
 /* Styles pour les droits d'auteur */
 .copyright {
@@ -556,3 +526,75 @@ footer {
     /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
     padding: 50px 50px;
   }
+
+  /* Styles pour la section about */
+  .about {
+    background-image: url('images/planet-7014517.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 50px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 20px;
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+font-size: 1.25rem;
+font-weight: bold;
+margin-bottom: 20px;
+color: #555;
+}
+
+.card-text {
+margin-bottom: 20px;
+}
+
+/* Style pour le bouton "S'inscrire" */
+.btn-event {
+bottom: 20px;
+    left: 50%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-event:hover {
+background-color: #555;
+    color: #fff;
+    /* Couleur au survol du bouton */
+    transform: scale(1.1);
+}
+
+* Style pour le texte du bouton au survol */
+.btn-event:hover::after {
+    content: "→";
+    /* Flèche vers la droite pour indiquer un lien */
+    margin-left: 5px;
+    font-size: 18px;
+}
+.custom-image {
+width: 100%;
+height: 500px;
+}
