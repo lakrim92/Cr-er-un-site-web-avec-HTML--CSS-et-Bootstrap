@@ -528,73 +528,73 @@ footer {
   }
 
   /* Styles pour la section about */
-  .about {
-    background-image: url('images/planet-7014517.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 50px 50px;
-}
+		.about {
+			background-image: url('images/planet-7014517.svg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 50px 50px;
+		}
 
-.card {
-    background-color: #fff;
-    border: 1px solid #222;
-    border-radius: 20px;
-    margin: 10px;
-    flex: 0 0 calc(50% - 20px);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-}
+		.card {
+			background-color: #fff;
+			border: 1px solid #222;
+			border-radius: 20px;
+			margin: 10px;
+			flex: 0 0 calc(50% - 20px);
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+			overflow: hidden;
+		}
 
-.card:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
+		.card:hover {
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+		}
 
-.card-title {
-font-size: 1.25rem;
-font-weight: bold;
-margin-bottom: 20px;
-color: #555;
+		.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+	color: #555;
 }
 
 .card-text {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* Style pour le bouton "S'inscrire" */
 .btn-event {
-bottom: 20px;
-    left: 50%;
-    display: inline-block;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 0;
-    background-color: transparent;
-    border: 1px solid #333;
-    color: #555;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-}
+    bottom: 20px;
+            left: 50%;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0;
+            background-color: transparent;
+            border: 1px solid #333;
+            color: #555;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
 
 .btn-event:hover {
-background-color: #555;
-    color: #fff;
-    /* Couleur au survol du bouton */
-    transform: scale(1.1);
+    background-color: #555;
+            color: #fff;
+            /* Couleur au survol du bouton */
+            transform: scale(1.1);
 }
 
 * Style pour le texte du bouton au survol */
-.btn-event:hover::after {
-    content: "→";
-    /* Flèche vers la droite pour indiquer un lien */
-    margin-left: 5px;
-    font-size: 18px;
-}
-.custom-image {
-width: 100%;
-height: 500px;
+        .btn-event:hover::after {
+            content: "→";
+            /* Flèche vers la droite pour indiquer un lien */
+            margin-left: 5px;
+            font-size: 18px;
+        }
+		.custom-image {
+    width: 100%;
+    height: 500px;
 }
