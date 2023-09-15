@@ -1,10 +1,6 @@
 
 
-p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  animation: fadeIn 1s ease 0.2s;
-}
+
 
 .btn {
   background-color: #4CAF50;
@@ -129,22 +125,6 @@ p {
   padding-bottom: 50px;
 }
 
-.card-about {
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 20px;
-  margin: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s, transform 0.3s;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-.card-about {
-  margin-top: 40px;
-}
-
 .card {
   background-color: #f1f1f1;
   border: 2px solid #222;
@@ -158,12 +138,6 @@ p {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
-}
-
-
-.card-about:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
 }
@@ -391,14 +365,17 @@ h2 {
 }
 
 .card-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #555;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .card-text {
   font-size: 1rem;
+  color: #777;
+  line-height: 1.4; 
 }
 
 .btn-transparent {
@@ -588,14 +565,7 @@ h2 {
   /* Définit la perspective pour l'effet 3D */
 }
 
-.card:hover {
-  transform: scale(1.05);
-  /* Agrandit la carte au survol */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  /* Ombre légèrement plus prononcée */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Animation fluide */
-}
+
 
 #objectifs .btn {
   background-color: transparent;

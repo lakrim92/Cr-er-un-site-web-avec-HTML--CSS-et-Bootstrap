@@ -88,12 +88,12 @@ header {
 
 /* Header styles */
 .header {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #343a40;
     min-height: auto;
 }
 
@@ -532,3 +532,27 @@ footer {
             transform: translateX(-50%);
             background-color: transparent;
         }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease 0.2s;
+          }
+
+          .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+          }
+
+          /* Styles pour la section about */
+.about {
+    background-image: url('images/planet-7014517.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
+    padding: 50px 50px;
+  }
