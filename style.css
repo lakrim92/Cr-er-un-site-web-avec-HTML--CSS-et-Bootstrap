@@ -1,14 +1,15 @@
  /* Styles communs pour tous les écrans */
  body {
+    /*-webkit-font-smoothing: antialiased;  Pour Safari, Chrome */
+    /*-moz-osx-font-smoothing: grayscale;  Pour les anciennes versions de Firefox */
+    font-family: Arial, sans-serif;
+    text-rendering: optimizeLegibility;
     background-color: #f8f9fa;
     font-size: 16px;
+    font-weight: normal;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+    overflow-x: hidden;
 }
 
 /* Styles pour les écrans mobiles */
@@ -25,8 +26,28 @@ header {
         padding: 20px;
     }
 
-    .btn {
-        bottom: 20px;
+    .header {
+        background-color: #333;
+        color: white;
+    }
+
+    .quisommesnous {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .objectifs {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Styles pour la section Nous rejoindre en mode mobile */
+    .nous-rejoindre {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
     }
 
     .contact {
@@ -42,8 +63,15 @@ header {
     }
 
     footer {
-        padding: 10px;
-    }
+        background-color: #222;
+        color: white;
+        text-align: center; 
+   }
+}
+
+.footer-don-button {
+    font-size: 16px; /* Réduisez la taille de la police si nécessaire */
+    padding: 20px 50px; /* Ajustez les marges intérieures du bouton */
 }
 
 /* Styles pour les écrans plus larges (tablettes et au-delà) */
@@ -76,6 +104,14 @@ header {
     footer {
         padding: 20px;
     }
+}
+
+.objectifs {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /* Styles spécifiques pour les appareils mobiles */
 }
 
 /* Media Query pour les écrans de taille supérieure (par exemple, ordinateurs de bureau) */
@@ -304,6 +340,8 @@ header {
     letter-spacing: 2px;
 }
 
+
+
 /* Styles pour le footer */
 footer {
     background-color: #333;
@@ -485,7 +523,6 @@ footer {
             text-decoration: none;
             border-radius: 20px;
             transition: background-color 0.3s, color 0.3s;
-            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             background-color: transparent;
@@ -575,7 +612,7 @@ footer {
             transform: scale(1.1);
 }
 
-* Style pour le texte du bouton au survol */
+/* Style pour le texte du bouton au survol */
         .btn-event:hover::after {
             content: "→";
             /* Flèche vers la droite pour indiquer un lien */
