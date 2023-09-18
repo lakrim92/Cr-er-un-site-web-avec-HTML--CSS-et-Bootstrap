@@ -1,630 +1,923 @@
  /* Styles communs pour tous les écrans */
  body {
-    /*-webkit-font-smoothing: antialiased;  Pour Safari, Chrome */
-    /*-moz-osx-font-smoothing: grayscale;  Pour les anciennes versions de Firefox */
-    font-family: Arial, sans-serif;
-    text-rendering: optimizeLegibility;
-    background-color: #f8f9fa;
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+     /*-moz-osx-font-smoothing: grayscale;  Pour les anciennes versions de Firefox */
+     font-family: Arial, sans-serif;
+     text-rendering: optimizeLegibility;
+     background-color: #f8f9fa;
+     font-size: 16px;
+     font-weight: normal;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+ }
 
-/* Styles pour les écrans mobiles */
-@media (max-width: 767px) {
-    .navbar-brand {
+ /* Styles pour les écrans mobiles */
+ @media (max-width: 767px) {
+    body {
         text-align: center;
+        margin: 0;
     }
 
-    .hero-image {
-        height: 00px;
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
     }
 
-    .hero-text {
-        padding: 20px;
-    }
+     .navbar-brand {
+         text-align: center;
+     }
 
-    .header {
-        background-color: #333;
-        color: white;
-    }
+     .hero-image {
+         height: 00px;
+     }
 
-    .quisommesnous {
-        background-color: #f8f9fa;
-        padding: 20px;
-        text-align: center;
-    }
+     .hero-text {
+         padding: 20px;
+     }
 
-    .objectifs {
-        background-color: #333;
-        padding: 20px;
-        text-align: center;
-    }
+     .header {
+         background-color: #333;
+         color: white;
+     }
 
-    /* Styles pour la section Nous rejoindre en mode mobile */
-    .nous-rejoindre {
-        background-color: #f8f9fa;
-        padding: 20px;
-        text-align: center;
-    }
+     .quisommesnous {
+         background-color: #f8f9fa;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+     }
 
-    .contact {
-        padding: 20px;
-    }
+     .objectifs {
+         background-color: #333;
+         padding: 20px;
+         text-align: center;
+     }
 
-    .form-container {
-        margin-bottom: 10px;
-    }
+     /* Styles pour la section Nous rejoindre en mode mobile */
+     .nous-rejoindre {
+         background-color: #f8f9fa;
+         padding: 20px;
+         text-align: center;
+     }
 
-    .contact-info {
-        padding: 20px;
-    }
+     .contact {
+         padding: 20px;
+     }
 
-    footer {
-        background-color: #222;
-        color: white;
-        text-align: center; 
-   }
-}
+     .form-container {
+         margin-bottom: 10px;
+     }
 
-.footer-don-button {
-    font-size: 16px; /* Réduisez la taille de la police si nécessaire */
-    padding: 20px 50px; /* Ajustez les marges intérieures du bouton */
-}
+     .contact-info {
+         padding: 20px;
+     }
 
-/* Styles pour les écrans plus larges (tablettes et au-delà) */
+     footer {
+         background-color: #222;
+         color: white;
+         text-align: center;
+     }
+ }
+
+ .footer-don-button {
+     font-size: 16px;
+     /* Réduisez la taille de la police si nécessaire */
+     padding: 20px 50px;
+     /* Ajustez les marges intérieures du bouton */
+ }
+
+ /* Styles pour les écrans plus larges (tablettes et au-delà) */
+ @media (min-width: 768px) {
+     .hero-image {
+         height: 400px;
+     }
+
+     .hero-text {
+         padding: 50px;
+     }
+
+     .btn {
+         bottom: 20px;
+         /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les tablettes */
+     }
+
+     .contact {
+         padding: 50px;
+     }
+
+     .form-container {
+         margin-bottom: 20px;
+     }
+
+     .contact-info {
+         padding: 50px;
+     }
+
+     footer {
+         padding: 20px;
+     }
+ }
+
+ .objectifs {
+     background-color: #333;
+     padding: 20px;
+     text-align: center;
+     color: white;
+     /* Styles spécifiques pour les appareils mobiles */
+ }
+
+ /* Media Query pour les écrans de taille supérieure (par exemple, ordinateurs de bureau) */
+ @media (min-width: 1200px) {
+     .btn {
+         bottom: 30px;
+         /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les ordinateurs de bureau */
+     }
+ }
+
+ /* Ajoutez ces styles pour ajuster les marges des colonnes des cartes */
 @media (min-width: 768px) {
-    .hero-image {
-        height: 400px;
+    .quisommesnous .row {
+        justify-content: space-between; /* Espacez les colonnes */
     }
 
-    .hero-text {
-        padding: 50px;
+    .quisommesnous .col-md-6 {
+        flex-basis: calc(50% - 10px); /* Définissez la largeur des colonnes à 50% moins la marge */
+        margin: 0; /* Réinitialisez les marges par défaut */
+    }
+    
+    .quisommesnous .col-md-6:first-child {
+        margin-right: 10px; /* Ajoutez une marge à droite uniquement à la première colonne */
     }
 
-    .btn {
-        bottom: 20px;
-        /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les tablettes */
+    .quisommesnous .col-md-6:last-child {
+        margin-left: 10px; /* Ajoutez une marge à gauche uniquement à la dernière colonne */
     }
+}
 
-    .contact {
-        padding: 50px;
-    }
 
-    .form-container {
-        margin-bottom: 20px;
-    }
+ /* Header styles */
+ .header {
+     background-color: #343a40;
+     color: #fff;
+ }
 
-    .contact-info {
-        padding: 50px;
-    }
+ .navbar {
+     background-color: #343a40;
+     min-height: auto;
+ }
 
-    footer {
-        padding: 20px;
-    }
+ .navbar-nav {
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     margin: 0 auto;
+     align-items: flex-end;
+ }
+
+ .navbar-nav .nav-item {
+     margin-left: 15px;
+     text-align: center;
+     flex-grow: 1;
+ }
+
+ .navbar-brand {
+     font-size: 2em;
+     font-weight: bold;
+     text-decoration: none;
+     color: #fff;
+     margin-left: 0;
+ }
+
+ .nav-item {
+     display: flex;
+     align-items: center;
+     /* Pour aligner verticalement les liens et les icônes */
+ }
+
+ .nav-link {
+     text-decoration: none;
+     color: #fff;
+     font-weight: bold;
+     padding: 0.5rem 1rem;
+     text-align: center;
+     display: block;
+ }
+
+ .navbar-nav .nav-link {
+     color: #fff;
+     font-size: 1.2em;
+     transition: color 0.3s;
+ }
+
+ .navbar-nav .nav-link:hover {
+     color: #ffcc00;
+ }
+
+ .nav-link.login-link {
+     font-size: 18px;
+     transition: color 0.3s;
+ }
+
+ .nav-link.login-link:hover {
+     color: #ffcc00;
+ }
+
+ .navbar-nav .nav-link .fas,
+ .navbar-nav .nav-link .fab {
+     font-size: 16px;
+     transition: color 0.3s;
+ }
+
+ .navbar-nav .nav-link .fas:hover,
+ .navbar-nav .nav-link .fab:hover {
+     color: #ffcc00;
+ }
+
+ .navbar-nav .social-icons {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+ }
+
+ .navbar-nav .social-icons .nav-item {
+     margin-left: 15px;
+ }
+
+ .social-icon {
+     font-size: 20px;
+     color: #fff;
+     margin-right: 5px;
+     text-decoration: none;
+ }
+
+ .social-icons .social-icon {
+     margin-right: 20px;
+     /* Ajoute 20 pixels d'espace à droite de chaque icône */
+ }
+
+
+ /* Styles pour le hamburger à gauche sur les petits écrans (mobiles) */
+ @media (max-width: 767px) {
+     .navbar-toggler {
+         order: -1;
+         /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
+     }
+
+     .navbar-collapse {
+         order: 0;
+         /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
+     }
+ }
+
+ /* Styles pour le hamburger à gauche sur les petits écrans (mode paysage) */
+ @media (min-width: 768px) and (max-width: 991px) {
+     .navbar-toggler {
+         order: -1;
+         /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
+     }
+
+     .navbar-collapse {
+         order: 0;
+         /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
+     }
+ }
+
+ .custom-pl-3 {
+     padding-left: 1rem;
+     /* Ajustez la valeur selon vos préférences pour l'espacement à gauche */
+     padding-right: 1rem;
+     /* Ajustez la valeur selon vos préférences pour l'espacement à droite */
+ }
+
+ /* Hero section styles */
+ .hero {
+     background-size: cover;
+     position: relative;
+     background-image: url('images/hero-image.jpg');
+     background-size: cover;
+     background-position: center;
+     text-align: center;
+     padding: 100px 0;
+ }
+
+ /* Styles pour la section hero */
+ .hero-image {
+     position: relative;
+     background-image: url('images/hero-image.jpg');
+     background-size: cover;
+     height: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     text-align: center;
+     font-family: 'Helvetica', sans-serif;
+ }
+
+ .hero-title {
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     color: #fff;
+ }
+
+ .hero-text {
+     padding: 20px;
+     color: #fff;
+     animation-duration: 1s;
+ }
+
+ .hero-description {
+     font-size: 18px;
+     margin-bottom: 30px;
+     color: #fff;
+ }
+
+ .btn-primary:hover {
+     background-color: #fff;
+     /* Fond blanc au survol */
+     color: #555;
+     /* Texte blanc au survol */
+     border: 1px solid #fff;
+     /* Bordure grise de 2px au survol */
+ }
+
+ /* Styles pour les titres h1 et p avec des animations */
+ .header h1,
+ .header p {
+     opacity: 0;
+     /* Le texte est initialement invisible */
+     transform: translateY(-20px);
+     /* Le texte est déplacé vers le haut de 20px */
+     animation: fade-in 1s ease-in-out forwards;
+ }
+
+ @keyframes fade-in {
+     to {
+         opacity: 1;
+         /* Le texte devient visible */
+         transform: translateY(0);
+         /* Le texte revient à sa position initiale */
+     }
+ }
+
+ /* Styles pour positionner le bouton en bas de l'image */
+ .hero {
+     position: relative;
+     /* Pour que l'image serve de référence de position */
+ }
+
+ /* Styles pour le texte "À propos de nous" */
+ .about-us-text {
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+ }
+
+ .title-obj {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 4px;
+    transform: translateZ(5px);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#objectifs .title-obj {
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Reflet en haut */
+.objectifs::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Reflet en bas */
+.objectifs::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    height: 10px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Style pour la section Objectifs */
+#objectifs {
+    border-radius: 30px;
+    border: 10px solid #222;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+#objectifs h3 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#objectifs h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#objectifs p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#objectifs a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#objectifs .card {
+    background-color: #fff;
+    border: 2px solid #222;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#objectifs .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#objectifs a:hover {
+    text-decoration: underline;
 }
 
 .objectifs {
     background-color: #333;
-    padding: 20px;
+    padding: 60px 0;
     text-align: center;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+#objectifs .btn {
+    background-color: transparent;
+    color: #555;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #555;
+    text-decoration: none;
+}
+
+#objectifs .btn:hover {
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+#objectifs .title-obj {
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#vol-img {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+
+}
+
+a.btn {
+    color: #fff;
+}
+
+nav a {
     color: white;
-    /* Styles spécifiques pour les appareils mobiles */
+    text-decoration: none;
 }
 
-/* Media Query pour les écrans de taille supérieure (par exemple, ordinateurs de bureau) */
-@media (min-width: 1200px) {
-    .btn {
-        bottom: 30px;
-        /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les ordinateurs de bureau */
-    }
+h2 {
+    text-align: center;
+    padding: 10px
 }
 
-/* Header styles */
-.header {
-    background-color: #343a40;
-    color: #fff;
-}
-
-.navbar {
-    background-color: #343a40;
-    min-height: auto;
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+/* Ajoutez des styles personnalisés pour les cartes */
+.custom-card {
+    border: 2px solid #222;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    align-items: flex-end;
 }
 
-.navbar-nav .nav-item {
-    margin-left: 15px;
-    text-align: center;
-    flex-grow: 1;
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-brand {
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    margin-left: 0;
+.hidden-text {
+    display: none;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
-    /* Pour aligner verticalement les liens et les icônes */
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    text-align: center;
+.initial-text {
     display: block;
 }
 
-.navbar-nav .nav-link {
-    color: #fff;
-    font-size: 1.2em;
-    transition: color 0.3s;
+
+/* Ajout d'un style pour afficher le texte complet */
+.show-more {
+    display: none;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #ffcc00;
+.toggle-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.nav-link.login-link {
-    font-size: 18px;
-    transition: color 0.3s;
+.card-mission {
+    background-color: #555
 }
 
-.nav-link.login-link:hover {
-    color: #ffcc00;
+.fs-2 {
+    font-size: 2.5rem;
 }
 
-.navbar-nav .nav-link .fas,
-.navbar-nav .nav-link .fab {
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link .fas:hover,
-.navbar-nav .nav-link .fab:hover {
-    color: #ffcc00;
-}
-
-.navbar-nav .social-icons {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-.navbar-nav .social-icons .nav-item {
-    margin-left: 15px;
-}
-
-.social-icon {
-    font-size: 20px;
-    color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
-}
-
-.social-icons .social-icon {
-    margin-right: 20px; /* Ajoute 20 pixels d'espace à droite de chaque icône */
-}
-
-
-/* Styles pour le hamburger à gauche sur les petits écrans (mobiles) */
-@media (max-width: 767px) {
-    .navbar-toggler {
-        order: -1;
-        /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
-    }
-
-    .navbar-collapse {
-        order: 0;
-        /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
-    }
-}
-
-/* Styles pour le hamburger à gauche sur les petits écrans (mode paysage) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-toggler {
-        order: -1;
-        /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
-    }
-
-    .navbar-collapse {
-        order: 0;
-        /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
-    }
-}
-
-.custom-pl-3 {
-    padding-left: 1rem;
-    /* Ajustez la valeur selon vos préférences pour l'espacement à gauche */
-    padding-right: 1rem;
-    /* Ajustez la valeur selon vos préférences pour l'espacement à droite */
-}
-
-/* Hero section styles */
-.hero {
-    background-size: cover;
-    position: relative;
-    background-image: url('images/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
+/* Style personnalisé pour la section "Nous rejoindre" */
+.nous-rejoindre {
+    background-color: #f8f9fa;
+    padding: 60px 0;
     text-align: center;
-    padding: 100px 0;
 }
 
-/* Styles pour la section hero */
-.hero-image {
-    position: relative;
-    background-image: url('images/hero-image.jpg');
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    font-family: 'Helvetica', sans-serif;
-}
-
-.hero-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.hero-text {
-    padding: 20px;
-    color: #fff;
-    animation-duration: 1s;
-}
-
-.hero-description {
+.nous-rejoindre p {
     font-size: 18px;
-    margin-bottom: 30px;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #fff;
-    /* Fond blanc au survol */
     color: #555;
-    /* Texte blanc au survol */
-    border: 1px solid #fff;
-    /* Bordure grise de 2px au survol */
+    margin-bottom: 30px;
 }
 
-/* Styles pour les titres h1 et p avec des animations */
-.header h1,
-.header p {
-    opacity: 0;
-    /* Le texte est initialement invisible */
-    transform: translateY(-20px);
-    /* Le texte est déplacé vers le haut de 20px */
-    animation: fade-in 1s ease-in-out forwards;
-}
-
-@keyframes fade-in {
-    to {
-        opacity: 1;
-        /* Le texte devient visible */
-        transform: translateY(0);
-        /* Le texte revient à sa position initiale */
-    }
-}
-
-/* Styles pour positionner le bouton en bas de l'image */
-.hero {
-    position: relative;
-    /* Pour que l'image serve de référence de position */
-}
-
-/* Styles pour le texte "À propos de nous" */
-.about-us-text {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-
-/* Styles pour le footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-logo {
-    width: 100px;
+.nous-rejoindre img {
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.footer-section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.footer-heading {
+.nous-rejoindre .btn-transparent,
+.nous-rejoindre .btn-transparent {
     font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.footer-text {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.social-links {
+    padding: 15px 30px;
+    border-radius: 30px;
     margin-top: 20px;
 }
 
-.social-link {
-    font-size: 24px;
-    margin-right: 15px;
+.nous-rejoindre .btn-transparent {
+    color: #555;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #222;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nous-rejoindre .nous-rejoindre {
+    background-color: transparent;
+    border-color: #555;
     color: #fff;
-    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.social-link:hover {
-    color: #007bff;
+.nous-rejoindre .btn-transparent:hover,
+.nous-rejoindre .nous-rejoindre:hover {
+    background-color: #333;
+    color: white;
 }
 
-.footer-btn {
-    margin-top: 30px;
-}
+ /* Styles pour le footer */
+ footer {
+     background-color: #333;
+     color: #fff;
+     padding: 50px 0;
+ }
 
-/* Styles pour les droits d'auteur */
-.copyright {
-    font-size: 12px;
-    margin-top: 30px;
-}
+ .footer-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
 
-        /* Définition de l'animation "grow" */
-        @keyframes grow {
-            0% {
-                transform: scale(1);
-                /* Taille initiale du bouton */
-            }
+ .footer-logo {
+     width: 100px;
+     height: auto;
+     margin-bottom: 20px;
+ }
 
-            100% {
-                transform: scale(1.1);
-                /* Taille agrandie du bouton au maximum */
-            }
-        }
+ .footer-section {
+     flex: 1;
+     margin: 0 10px;
+ }
 
-        /* Style pour les conteneurs de formulaire */
-        .form-container {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 30px;
-        }
+ .footer-heading {
+     font-size: 20px;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-bottom: 15px;
+ }
 
-        /* Style pour les titres des sections */
-        .title-first {
-            font-size: 24px;
-            color: #333;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-            transform: translateZ(5px);
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+ .footer-text {
+     font-size: 14px;
+     line-height: 1.6;
+ }
 
-        /* Style pour les champs de formulaire */
-        .form-control {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 15px;
-            width: 100%;
-        }
+ .social-links {
+     margin-top: 20px;
+ }
 
-        /* Style pour les informations de contact */
-        .contact-info {
-            background-color: #f5f5f5;
-            padding: 30px;
-            border: 1px solid #ddd;
-            /* Bordure de la section */
-            border-radius: 5px;
-            margin-top: 30px;
-        }
+ .social-link {
+     font-size: 24px;
+     margin-right: 15px;
+     color: #fff;
+     text-decoration: none;
+ }
 
-        /* Style pour les coordonnées */
-        .contact-info address {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 20px;
-        }
+ .social-link:hover {
+     color: #007bff;
+ }
 
-        /* Style pour le texte des heures d'ouverture */
-        .contact-p {
-            font-size: 16px;
-            color: #555;
-        }
+ .footer-btn {
+     margin-top: 30px;
+ }
 
-        .btn-contact {
-            bottom: 20px;
-            left: 50%;
-            display: inline-block;
-            font-size: 16px;
-            padding: 10px 20px;
-            margin: 0;
-            background-color: transparent;
-            border: 1px solid #333;
-            color: #555;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s;
-        }
+ /* Styles pour les droits d'auteur */
+ .copyright {
+     font-size: 12px;
+     margin-top: 30px;
+ }
 
-        .btn-contact:hover {
-            background-color: #555;
-            color: #fff;
-            /* Couleur au survol du bouton */
-            transform: scale(1.1);
-        }
+ /* Définition de l'animation "grow" */
+ @keyframes grow {
+     0% {
+         transform: scale(1);
+         /* Taille initiale du bouton */
+     }
 
-        /* Style pour le texte du bouton au survol */
-        .btn-contact:hover::after {
-            content: "→";
-            /* Flèche vers la droite pour indiquer un lien */
-            margin-left: 5px;
-            font-size: 18px;
-        }
+     100% {
+         transform: scale(1.1);
+         /* Taille agrandie du bouton au maximum */
+     }
+ }
 
-        /* Style pour les étiquettes des champs */
-        .form-group label {
-            font-weight: bold;
-            color: #555;
-            /* Couleur du texte du label */
-            font-size: 16px;
-            /* Taille de police du label */
-        }
+ /* Style pour les conteneurs de formulaire */
+ .form-container {
+     background-color: #f9f9f9;
+     border: 1px solid #ddd;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     margin-bottom: 30px;
+ }
 
-        .btn-primary {
-            position: absolute;
-            border: 1px solid #fff;
-            color: #fff;
-            padding: 5px 10px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: background-color 0.3s, color 0.3s;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: transparent;
-        }
+ /* Style pour les titres des sections */
+ .title-first {
+     font-size: 24px;
+     color: #333;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+     transform: translateZ(5px);
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     text-align: center;
+ }
 
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            animation: fadeIn 1s ease 0.2s;
-          }
+ /* Style pour les champs de formulaire */
+ .form-control {
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     padding: 10px;
+     margin-bottom: 15px;
+     width: 100%;
+ }
 
-          .section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-          }
+ /* Style pour les informations de contact */
+ .contact-info {
+     background-color: #f5f5f5;
+     padding: 30px;
+     border: 1px solid #ddd;
+     /* Bordure de la section */
+     border-radius: 5px;
+     margin-top: 30px;
+ }
 
-          /* Styles pour la section about */
-.about {
-    background-image: url('images/planet-7014517.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
-    padding: 50px 50px;
-  }
+ /* Style pour les coordonnées */
+ .contact-info address {
+     font-size: 18px;
+     color: #333;
+     margin-bottom: 20px;
+ }
 
-  /* Styles pour la section about */
-		.about {
-			background-image: url('images/planet-7014517.svg');
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-color: rgba(0, 0, 0, 0.4);
-			padding: 50px 50px;
-		}
+ /* Style pour le texte des heures d'ouverture */
+ .contact-p {
+     font-size: 16px;
+     color: #555;
+ }
 
-		.card {
-			background-color: #fff;
-			border: 1px solid #222;
-			border-radius: 20px;
-			margin: 10px;
-			flex: 0 0 calc(50% - 20px);
-			transition: box-shadow 0.3s ease, transform 0.3s ease;
-			overflow: hidden;
-		}
+ .btn-contact {
+     bottom: 20px;
+     left: 50%;
+     display: inline-block;
+     font-size: 16px;
+     padding: 10px 20px;
+     margin: 0;
+     background-color: #007bff;
+     border: 1px solid #007bff;
+     color: #555;
+     font-weight: bold;
+     text-decoration: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s, transform 0.2s;
+ }
 
-		.card:hover {
-			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-		}
+ .btn-contact:hover {
+     background-color: #0056b3;
+     color: #333;
+     /* Couleur au survol du bouton */
+     transform: scale(1.1);
+ }
 
-		.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-	color: #555;
-}
+ /* Style pour le texte du bouton au survol */
+ .btn-contact:hover::after {
+     content: "→";
+     /* Flèche vers la droite pour indiquer un lien */
+     margin-left: 5px;
+     font-size: 18px;
+ }
 
-.card-text {
-    margin-bottom: 20px;
-}
+ /* Style pour les étiquettes des champs */
+ .form-group label {
+     font-weight: bold;
+     color: #555;
+     /* Couleur du texte du label */
+     font-size: 16px;
+     /* Taille de police du label */
+ }
 
-/* Style pour le bouton "S'inscrire" */
-.btn-event {
-    bottom: 20px;
-            left: 50%;
-            display: inline-block;
-            font-size: 16px;
-            padding: 10px 20px;
-            margin: 0;
-            background-color: transparent;
-            border: 1px solid #333;
-            color: #555;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s;
-        }
+ .btn-primary {
+     position: absolute;
+     border: 1px solid #fff;
+     color: #fff;
+     padding: 5px 10px;
+     font-weight: bold;
+     text-decoration: none;
+     border-radius: 20px;
+     transition: background-color 0.3s, color 0.3s;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: transparent;
+ }
 
-.btn-event:hover {
-    background-color: #555;
-            color: #fff;
-            /* Couleur au survol du bouton */
-            transform: scale(1.1);
-}
+ p {
+     font-size: 18px;
+     margin-bottom: 30px;
+     animation: fadeIn 1s ease 0.2s;
+ }
 
-/* Style pour le texte du bouton au survol */
-        .btn-event:hover::after {
-            content: "→";
-            /* Flèche vers la droite pour indiquer un lien */
-            margin-left: 5px;
-            font-size: 18px;
-        }
-		.custom-image {
-    width: 100%;
-    height: 500px;
-}
+ .section {
+     margin: 20px;
+     padding: 20px;
+     background-color: #fff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+ }
 
-.quisommesnous {
-    background-image: url('images/planet-7014517.svg');
-    background-size: cover;"
-}
+ /* Styles pour la section about */
+ .about {
+     background-image: url('images/planet-7014517.svg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
+     padding: 50px 50px;
+ }
+
+ /* Styles pour la section about */
+ .about {
+     background-image: url('images/planet-7014517.svg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: rgba(0, 0, 0, 0.4);
+     padding: 50px 50px;
+ }
+
+ .card {
+     background-color: #fff;
+     border: 1px solid #222;
+     border-radius: 20px;
+     margin: 10px;
+     flex: 0 0 calc(50% - 20px);
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
+     overflow: hidden;
+ }
+
+ .card:hover {
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+ }
+
+ .card-title {
+     font-size: 1.25rem;
+     font-weight: bold;
+     margin-bottom: 20px;
+     color: #555;
+ }
+
+ .card-text {
+     margin-bottom: 20px;
+ }
+
+ /* Style pour le bouton "S'inscrire" */
+ .btn-event {
+     bottom: 20px;
+     left: 50%;
+     display: inline-block;
+     font-size: 16px;
+     padding: 10px 20px;
+     margin: 0;
+     background-color: transparent;
+     border: 1px solid #333;
+     color: #222;
+     font-weight: bold;
+     text-decoration: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s, transform 0.2s;
+ }
+
+ .btn-event:hover {
+     background-color: #555;
+     color: #fff;
+     /* Couleur au survol du bouton */
+     transform: scale(1.1);
+ }
+
+ /* Style pour le texte du bouton au survol */
+ .btn-event:hover::after {
+     content: "→";
+     /* Flèche vers la droite pour indiquer un lien */
+     margin-left: 5px;
+     font-size: 18px;
+ }
+
+ .custom-image {
+     width: 100%;
+     height: 500px;
+ }
+
+ .quisommesnous {
+     background-image: url('images/planet-7014517.svg');
+     background-size: cover;
+ }
