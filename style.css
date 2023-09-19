@@ -1,6 +1,5 @@
  /* Styles communs pour tous les écrans */
  body {
-     /*-moz-osx-font-smoothing: grayscale;  Pour les anciennes versions de Firefox */
      font-family: Arial, sans-serif;
      text-rendering: optimizeLegibility;
      background-color: #f8f9fa;
@@ -87,9 +86,7 @@
 
  .footer-don-button {
      font-size: 16px;
-     /* Réduisez la taille de la police si nécessaire */
      padding: 20px 50px;
-     /* Ajustez les marges intérieures du bouton */
  }
 
  /* Styles pour les écrans plus larges (tablettes et au-delà) */
@@ -104,7 +101,6 @@
 
      .btn {
          bottom: 20px;
-         /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les tablettes */
      }
 
      .contact {
@@ -129,43 +125,45 @@
      padding: 20px;
      text-align: center;
      color: white;
-     /* Styles spécifiques pour les appareils mobiles */
  }
 
  /* Media Query pour les écrans de taille supérieure (par exemple, ordinateurs de bureau) */
  @media (min-width: 1200px) {
      .btn {
          bottom: 30px;
-         /* Ajustez la valeur en pixels pour l'espacement souhaité depuis le bas de l'image pour les ordinateurs de bureau */
      }
  }
 
  /* Ajoutez ces styles pour ajuster les marges des colonnes des cartes */
 @media (min-width: 768px) {
     .quisommesnous .row {
-        justify-content: space-between; /* Espacez les colonnes */
+        justify-content: space-between;
     }
 
     .quisommesnous .col-md-6 {
-        flex-basis: calc(50% - 10px); /* Définissez la largeur des colonnes à 50% moins la marge */
-        margin: 0; /* Réinitialisez les marges par défaut */
+        flex-basis: calc(50% - 10px);
+        margin: 0;
     }
     
     .quisommesnous .col-md-6:first-child {
-        margin-right: 10px; /* Ajoutez une marge à droite uniquement à la première colonne */
+        margin-right: 10px; 
     }
 
     .quisommesnous .col-md-6:last-child {
-        margin-left: 10px; /* Ajoutez une marge à gauche uniquement à la dernière colonne */
+        margin-left: 10px;
     }
 }
-
 
  /* Header styles */
  .header {
      background-color: #343a40;
      color: #fff;
  }
+
+.header .hero {
+    height: 500px;
+}
+
 
  .navbar {
      background-color: #343a40;
@@ -197,7 +195,6 @@
  .nav-item {
      display: flex;
      align-items: center;
-     /* Pour aligner verticalement les liens et les icônes */
  }
 
  .nav-link {
@@ -258,7 +255,6 @@
 
  .social-icons .social-icon {
      margin-right: 20px;
-     /* Ajoute 20 pixels d'espace à droite de chaque icône */
  }
 
 
@@ -266,12 +262,10 @@
  @media (max-width: 767px) {
      .navbar-toggler {
          order: -1;
-         /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
      }
 
      .navbar-collapse {
          order: 0;
-         /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
      }
  }
 
@@ -279,20 +273,16 @@
  @media (min-width: 768px) and (max-width: 991px) {
      .navbar-toggler {
          order: -1;
-         /* Cette règle modifie l'ordre d'affichage, mettant le hamburger à gauche */
      }
 
      .navbar-collapse {
          order: 0;
-         /* Rétablit l'ordre d'affichage normal pour le contenu du menu */
      }
  }
 
  .custom-pl-3 {
      padding-left: 1rem;
-     /* Ajustez la valeur selon vos préférences pour l'espacement à gauche */
      padding-right: 1rem;
-     /* Ajustez la valeur selon vos préférences pour l'espacement à droite */
  }
 
  /* Hero section styles */
@@ -341,36 +331,28 @@
 
  .btn-primary:hover {
      background-color: #fff;
-     /* Fond blanc au survol */
      color: #555;
-     /* Texte blanc au survol */
      border: 1px solid #fff;
-     /* Bordure grise de 2px au survol */
  }
 
  /* Styles pour les titres h1 et p avec des animations */
  .header h1,
  .header p {
      opacity: 0;
-     /* Le texte est initialement invisible */
      transform: translateY(-20px);
-     /* Le texte est déplacé vers le haut de 20px */
      animation: fade-in 1s ease-in-out forwards;
  }
 
  @keyframes fade-in {
      to {
          opacity: 1;
-         /* Le texte devient visible */
          transform: translateY(0);
-         /* Le texte revient à sa position initiale */
      }
  }
 
  /* Styles pour positionner le bouton en bas de l'image */
  .hero {
      position: relative;
-     /* Pour que l'image serve de référence de position */
  }
 
  /* Styles pour le texte "À propos de nous" */
@@ -522,10 +504,6 @@
 
 }
 
-a.btn {
-    color: #fff;
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -538,10 +516,10 @@ h2 {
 
 /* Ajoutez des styles personnalisés pour les cartes */
 .custom-card {
-    border: 2px solid #222;
+    border: 2px solid #ccc;
     border-radius: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     transition: transform 0.2s, box-shadow 0.2s;
     height: 100%;
     max-width: 100%;
@@ -573,10 +551,6 @@ h2 {
     color: #007bff;
     cursor: pointer;
     text-decoration: underline;
-}
-
-.card-mission {
-    background-color: #555
 }
 
 .fs-2 {
@@ -700,12 +674,10 @@ h2 {
  @keyframes grow {
      0% {
          transform: scale(1);
-         /* Taille initiale du bouton */
      }
 
      100% {
          transform: scale(1.1);
-         /* Taille agrandie du bouton au maximum */
      }
  }
 
@@ -747,7 +719,6 @@ h2 {
      background-color: #f5f5f5;
      padding: 30px;
      border: 1px solid #ddd;
-     /* Bordure de la section */
      border-radius: 5px;
      margin-top: 30px;
  }
@@ -772,9 +743,9 @@ h2 {
      font-size: 16px;
      padding: 10px 20px;
      margin: 0;
-     background-color: #007bff;
-     border: 1px solid #007bff;
-     color: #555;
+     background-color: transparent;
+     border: 1px solid #222;
+     color: #222;
      font-weight: bold;
      text-decoration: none;
      border-radius: 30px;
@@ -783,16 +754,13 @@ h2 {
  }
 
  .btn-contact:hover {
-     background-color: #0056b3;
-     color: #333;
-     /* Couleur au survol du bouton */
+     background-color: #333;
+     color: #f5f5f5;
      transform: scale(1.1);
  }
 
  /* Style pour le texte du bouton au survol */
  .btn-contact:hover::after {
-     content: "→";
-     /* Flèche vers la droite pour indiquer un lien */
      margin-left: 5px;
      font-size: 18px;
  }
@@ -801,9 +769,7 @@ h2 {
  .form-group label {
      font-weight: bold;
      color: #555;
-     /* Couleur du texte du label */
      font-size: 16px;
-     /* Taille de police du label */
  }
 
  .btn-primary {
@@ -834,29 +800,20 @@ h2 {
      border-radius: 10px;
  }
 
- /* Styles pour la section about */
- .about {
-     background-image: url('images/planet-7014517.svg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     /*background-color: rgba(0, 0, 0, 0.4);  Couleur d'arrière-plan avec transparence */
-     padding: 50px 50px;
- }
 
  /* Styles pour la section about */
  .about {
-     background-image: url('images/planet-7014517.svg');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-color: rgba(0, 0, 0, 0.4);
-     padding: 50px 50px;
+    background-image: url('images/planet-7014517.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(252, 252, 252);
+    padding: 50px 50px;
  }
 
  .card {
      background-color: #fff;
-     border: 1px solid #222;
+     border: 1px solid #ccc;
      border-radius: 20px;
      margin: 10px;
      flex: 0 0 calc(50% - 20px);
@@ -884,12 +841,12 @@ h2 {
      bottom: 20px;
      left: 50%;
      display: inline-block;
-     font-size: 16px;
+     font-size: 1.2rem;
      padding: 10px 20px;
      margin: 0;
      background-color: transparent;
      border: 1px solid #333;
-     color: #222;
+     color:#555;
      font-weight: bold;
      text-decoration: none;
      border-radius: 30px;
@@ -900,17 +857,17 @@ h2 {
  .btn-event:hover {
      background-color: #555;
      color: #fff;
-     /* Couleur au survol du bouton */
      transform: scale(1.1);
  }
 
  /* Style pour le texte du bouton au survol */
  .btn-event:hover::after {
-     content: "→";
-     /* Flèche vers la droite pour indiquer un lien */
      margin-left: 5px;
      font-size: 18px;
  }
+ .past-events {
+    background-image: url('images/gettyimages-545269118-170667a.jpg');
+}
 
  .custom-image {
      width: 100%;
@@ -921,3 +878,14 @@ h2 {
      background-image: url('images/planet-7014517.svg');
      background-size: cover;
  }
+
+ #inscription-evenement {
+    padding: 20px;
+}
+
+#inscription-evenement form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
